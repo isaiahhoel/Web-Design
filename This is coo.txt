@@ -1,5 +1,0 @@
-ICANN Coordinates the DNS  by matching domain names with IP addresses. 
-DNS is a server that holds all the domain names and manages the numbers of the domains
-GoDaddy web hosting
-they charge for things like storage and web speed
-Plan what you design and create testable code.

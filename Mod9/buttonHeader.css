@@ -1,0 +1,32 @@
+.button {
+    background: #0000ff;
+    background: linear-gradient(#0000ff, #9900ff);
+    border-radius: 1000px;
+    box-shadow: 0 2px #444444;
+    padding: 20px 45px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal normal 29px/1 "Komika", cursive;
+    text-align: center;
+    text-shadow: 2px 2px #666666;
+}
+
+img.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+a {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}

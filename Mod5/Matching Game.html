@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Cartoon Character Matching Game</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="matchingGame.java"></script>
+	<link rel="stylesheet" href="matchingGame.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body {
+			text-align: center;
+			background-image: url('checkeredBackground.jpg');
+			background-size: 50%;
+		}
+
+		h1 {
+			font-family: 'Sniglet', cursive;
+			color: rgb(0, 26, 255);
+			margin: 10px;
+		}
+
+		#game-wrapper {
+			margin: auto;
+			margin-top: 40px;
+			padding: 20px;
+			width: 760px;
+			background-color: #ffffff;
+			border-radius: 20px;
+			border: 5px solid rgb(0, 4, 255);
+		}
+
+		.card {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			backface-visibility: hidden;
+		}
+
+		.card_front {
+			background-image: linear-gradient(rgb(47, 0, 255), rgb(0, 183, 255));
+		}
+
+		.card_back {
+			background: white;
+			transform: rotateY(180deg);
+		}
+
+		.card_back img {
+			width: 80px;
+			height: 80px;
+			margin-top: 10px;
+		}
+
+
+		.is-flipped {
+			transform: rotateY(180deg);
+		}
+
+		a {
+			font-family: 'Sniglet', cursive;
+			background-color: rgb(0, 4, 255);
+			display: block;
+			padding: 10px;
+			margin: 10px;
+            color:aliceblue;
+            
+		}
+        a:hover {
+            cursor: grab;
+            background-color: red;
+            transition: 700ms;
+        }
+	</style>
+</head>
+
+<body>
+	<div id="game-wrapper">
+		<h1>Cartoon Matching Game</h1>
+		<div id="match-grid"></div>
+		<a onclick="start()">RESTART</a>
+	</div>
+
+	<script>
+		var images = ["mike.jpg", "Vector.jpg", "spongeboimebob.jpg"];
+		start();
+
+
+	</script>
+</body>
+
+</html>

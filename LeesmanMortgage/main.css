@@ -14,7 +14,7 @@ body {
 
 .nav-link,
 .navbar-brand {
-	color: rgb(51, 43, 165);
+	color: rgb(27, 60, 84);
 	cursor: pointer;
 }
 
@@ -23,11 +23,7 @@ body {
 }
 
 .nav-link:hover {
-<<<<<<< HEAD
 	color: rgb(108, 133, 247);
-=======
-	color: #000;
->>>>>>> parent of f5a6dfc (Responsive website)
 }
 
 .navbar-collapse {

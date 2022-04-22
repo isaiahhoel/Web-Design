@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--This is the language of which it shall read the code-->
+<html lang="en-US">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Isaiah's Biography Site -- Family</title>           <!--this is my title and the ones below are my meta tags for when it is cited i -->
+	  <meta name="description" content="A website compiled of all the different things you can do in HTML, CSS, and Java.">
+      <meta http-equiv="author" content="Isaiah Hoelscher"> 
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link href="css/famCSS.css" type = "text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="family.html">Family</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Academics.html">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Athletics.html">Athletics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faith.html">Faith</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="page-header header container-fluid">
+      <div class="overlay"></div>
+      <div class="description">
+        <h1>Welcome to the Family Page!</h1>
+        <h2>Take a quick look at the people that support me through it all!</h2>
+      </div>
+    </header>
+
+    <div class="container team" id="fam">
+      <h1>My Family</h1>
+      <h3>Pictured above is my immediate family all together at christmas, below you can find more pictures of all of the individual families and some extra pictures of 
+        my family and pet(s)!</h3>
+    </div>
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/rachel.JPG" style="width:100%">
+        <div class="text"><br>One of two of my sisters, she has four kids of all different ages ranging from seven all the way to 22! 
+          One of my biggest supporters and a huge guide in my life!</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/michelle.jpg" style="width:100%">                   <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow-->
+        <div class="text"><br>My oldest sibiling with the most heart out of us all, huge role model and representation of 
+          what hard work and determination can do in life. She also has four kids and they also range from six all the way up to 24!</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/pat.jpg" style="width:100%">
+        <br>
+        <div class="text">My one and only brother, also has four kids but are all similar in age from middle school to high school. 
+          A complete personality replica in most ways and does so much for his family and the people he cares about most.</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/doggo.JPG" style="width:100%">
+        <br>
+        <div class="text">One of three of my pets, all dogs, her name is Josie and she always keeps 
+          me on my toes!</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/cousins.jpg" style="width:100%">
+        <br>
+        <div class="text">Da Cousins! It's a rare occasion that we all get ot be in the same place at once 
+          but we are all beasts in our own ways!</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/nephews.JPG" style="width:100%">
+        <br>
+        <div class="text">All of Rachel's kids plus my great niece, Harper. Rachel's oldest, Maddie, is Harpers momma.</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+      <script src="js/ready.js"></script>
+    </div>
+
+      <br>
+    
+    
+    
+    
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+    
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+    
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+  </body>
+</html>

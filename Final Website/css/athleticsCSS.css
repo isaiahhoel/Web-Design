@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(60, 69, 71)!important;
+    color: white!important;
+    margin-bottom: 100px!important;
+}
+/* Navigation bar */
+.navbar {
+	background: #000000;
+}
+
+.nav-link,
+.navbar-brand {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em;
+}
+
+.nav-link:hover {
+	color: rgb(241, 70, 70);
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+/* HEADER */
+.header {
+	background-image: url('../images/headerAthletics.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+    max-height: 1000px;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: #ffffff;
+}
+
+.description h2 {
+	color: rgb(182, 182, 182)
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+
+/* SlideShow */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display:none}
+img {vertical-align: middle;max-height: 1000px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px !important;
+}
+
+/* Next & previous buttons */
+a.prev, a.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(169, 169, 169, 0.534);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #030303;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.container {
+    background-color: black!important;
+    border: 2px solid white!important;
+    height: fit-content!important;
+    width:100%!important;
+    padding-right:15px!important;
+    padding-left:15px!important;
+    padding-top: 10px!important;
+    margin-top:200px!important;
+    margin-left:auto!important;
+    max-width: 600px!important; 
+    text-align: center!important;
+    height: 250px!important;
+}
+
+video {
+    margin-top: 150px!important;
+    border: 3px solid black;
+    width: 25%!important;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+}
+
+.acheive {
+    border: 6px double white;
+    width: fit-content;
+    max-width: 1000px;
+    margin-left: 200px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.favorites {
+    border: 6px double white;
+    width: fit-content;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: 200px;
+    margin-top: 75px;
+    padding: 20px;
+}
+
+.acheive img {
+    width: 80%;
+    height: 50%;
+}
+
+.favorites img {
+    width: 65%;
+    height: 50%;
+}

@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(60, 69, 71)!important;
+    color: white!important;
+    margin-bottom: 100px!important;
+}
+/* Navigation bar */
+.navbar {
+	background: #000000;
+}
+
+.nav-link,
+.navbar-brand {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em;
+}
+
+.nav-link:hover {
+	color: rgb(241, 70, 70);
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+/* HEADER */
+.header {
+	background-image: url('../images/academicsHeader.jpg');
+	background-size: cover;
+	background-position: bottom;
+	position: relative;
+    max-height: 1000px;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: #ffffff;
+}
+
+.description h2 {
+	color: rgb(182, 182, 182)
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}

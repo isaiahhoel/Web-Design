@@ -5,7 +5,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Isaiah's Biography Site</title>           <!--this is my title and the ones below are my meta tags for when it is cited i -->
+      <title>Isaiah's Biography Site --- Academics</title>           <!--this is my title and the ones below are my meta tags for when it is cited i -->
 	  <meta name="description" content="A website compiled of all the different things you can do in HTML, CSS, and Java.">
       <meta http-equiv="author" content="Isaiah Hoelscher">
       <link href="css/AcademicsCSS.css" type = "text/css" rel="stylesheet"/> 
@@ -15,7 +15,7 @@
   <body>
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="Academics.html">Academics</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation"> <!--Navigation-->
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navigation">
@@ -35,6 +35,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="faith.html">Faith</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="happyPage.html">Mrs.Todd Happy Page</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -42,12 +45,12 @@
         <div class="overlay"></div>
         <div class="description">
           <h1>Welcome to the Academics Page</h1>
-          <h2>Find out what I have done and will do throughout my Academic career!</h2>
+          <h2>Find out what I have done and will do throughout my Academic career!</h2>    <!--header-->
         </div>
     </header>
 
-    <div class="academicRow" >
-        <div class="acheive">
+    <div>
+        <div class="acheive" style="float: right; margin-right: 200px;">
             <h1>Academic Acheivements<br/>(HS and College)</h1>
             <ul>
                 <li>4x HS Academic All-Conference</li>
@@ -57,8 +60,21 @@
                 <li>Current GPA 3.72 (<em>Sophomore</em>)</li>
             </ul>
         </div>
+
+        <div class="acheive" style="display:inline-block;">
+            <h1>Academic Path</h1>
+            <ol>
+                <li>Graduated from Union High School in 2020.</li>
+                <li>Currently Attending HLGU on a Baseball and Academic Scholarship.</li>
+                <li>Studying Computer Information Systems as Primary Major.</li>
+                <li>Also Studying Business as a minor or potential double major.</li>
+                <li>Graduating HLGU in 2024 with a CIS and Business degrees.</li>
+            </ol>
+        </div>
+
+        <h1 class="projectHeader">These are some of the projects that I have completed so far in my college Academic career as a CIS Major!</h1>
         
-        <div class="acheive" style="display:table">
+        <div class="acheive" style="display:table; margin-top: 200px;">
             <h1 style="text-align:right;">Project 1</h1>
             <div style="display: table-cell; float:right;">
                 <img src="images/Facebook_Header.jpg">
@@ -68,16 +84,16 @@
                 things like this using the logo you see on the right side of the Facebook Header.</h4>
             </div>
         </div>
-
-        <div class="acheive" style="display:table">
-            <h1 style="text-align:right;">Project 2</h1>
-            <div style="display: table-cell; float:right;">
-                <!--<iframe class="javaGame" src="https://ihoelscher.cishlgu.com/Mod11/JavaScript%20Game/javaGame.html">-->
+        
+        <div class="acheive"  style="float: right; margin-right: 200px; margin-bottom: 100px;">
+            <h1 style="text-align:center;">Project 2</h1>
+            <div style="display: table-cell; float:right; padding-right: 20px;">
+                <iframe class="javaGame" src="https://ihoelscher.cishlgu.com/WebPageWeek5/Matching%20Game.html"></iframe>   <!--Iframe with a game created earlier in the semester-->
             </div>
-            <div style="display: table-cell; vertical-align: middle; width: 400px; padding-left: 10px;">
-                <h4>This is a Game we made using stricly JavaScript code with some CSS for styling.</h4>
+            <div style="vertical-align: middle; padding-left: 10px; text-align: center;">
+                <h4>This is a Matching Game we made using stricly JavaScript code with some CSS for styling.</h4>
             </div>
         </div>
     </div>
-    <script src="js/ready.js"></script>
+    <script src="js/ready.js"></script> <!--uses the ready function in js to wait for the whole page to load before showing it-->
   </body>

@@ -1,7 +1,6 @@
 body {
     background-color: rgb(60, 69, 71)!important;
     color: white!important;
-    margin-bottom: 100px!important;
 }
 /* Navigation bar */
 .navbar {
@@ -41,7 +40,7 @@ body {
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.329);
 }
 
 .description {
@@ -66,6 +65,9 @@ body {
 	line-height: 1.5;
 }
 
+h1, h2, p {
+  font-family: cursive!important;
+}
 
 /* SlideShow */
 
@@ -163,57 +165,68 @@ a.prev, a.next {
 }
 
 .container {
-    background-color: black!important;
-    border: 2px solid white!important;
-    height: fit-content!important;
-    width:100%!important;
-    padding-right:15px!important;
-    padding-left:15px!important;
-    padding-top: 10px!important;
-    margin-top:200px!important;
-    margin-left:auto!important;
-    max-width: 600px!important; 
-    text-align: center!important;
-    height: 250px!important;
+  background-color: black!important;
+  border: 2px solid white!important;
+  height: fit-content!important;
+  width:100%!important;
+  padding-right:15px!important;
+  padding-left:15px!important;
+  padding-top: 10px!important;
+  margin-top:200px!important;
+  margin-left:auto!important;
+  max-width: 600px!important; 
+  text-align: center!important;
+  height: 250px!important;
 }
 
 video {
-    margin-top: 150px!important;
-    border: 3px solid black;
-    width: 25%!important;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    margin: auto;
+  margin-top: 150px!important;
+  border: 3px solid black;
+  width: 25%!important;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  margin: auto;
 }
 
 .acheive {
-    border: 6px double white;
-    width: fit-content;
-    max-width: 1000px;
-    margin-left: 200px;
-    margin-top: 100px;
-    padding: 20px;
+  border: 6px double white;
+  width: fit-content;
+  max-width: 1000px;
+  margin-left: 200px;
+  margin-top: 100px;
+  padding: 20px;
 }
 
 .favorites {
-    border: 6px double white;
-    width: fit-content;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: 200px;
-    margin-top: 75px;
-    padding: 20px;
+  border: 6px double white;
+  width: fit-content;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: 200px;
+  margin-top: 75px;
+  padding: 20px;
 }
 
 .acheive img {
-    width: 80%;
-    height: 50%;
+  width: 80%;
+  height: 50%;
 }
 
 .favorites img {
-    width: 65%;
-    height: 50%;
+  width: 65%;
+  height: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color:black;
+  background-color: rgb(255, 255, 255);
+}
+
+footer img {
+  width:70px
 }

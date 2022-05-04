@@ -27,7 +27,7 @@ body {
 
 /* HEADER */
 .header {
-	background-image: url('../images/academicsHeader.jpg');
+	background-image: url('../images/Main1.JPG');
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -40,7 +40,7 @@ body {
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.329);
 }
 
 .description {
@@ -53,6 +53,8 @@ body {
 
 .description h1 {
 	color: #ffffff;
+  font-size: 60px;
+  font-family: fangsong;
 }
 
 .description h2 {
@@ -65,10 +67,9 @@ body {
 	line-height: 1.5;
 }
 
-h4 {
+.acheive p {
   font-family: cursive!important;
 }
-
 
 /* SlideShow */
 
@@ -176,16 +177,20 @@ a.prev, a.next {
 
 .acheive {
   border: 6px solid white;
-  width: fit-content;
+  width: max-content;
   max-width: 1000px;
-  margin-left: 200px;
-  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
 }
 
 .acheive img {
-  height:80%;
+  height:70%;
   width: 100%;
+}
+
+.welcome {
+  height: 500px!important;
 }
 
 iframe {
@@ -195,9 +200,9 @@ iframe {
 }
 
 .projectHeader {
-  margin-top: 150px;
-  border-top: 4px double white;
-  border-bottom: 4px double white;
+  margin-top: 100px;
+  border-top: 12px double white;
+  border-bottom: 12px double white;
   padding: 10px 20px;
   text-align: center;
 }
@@ -210,5 +215,5 @@ footer {
 }
 
 footer img {
-  width:70px
+  width: 70px
 }

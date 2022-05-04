@@ -1,7 +1,6 @@
 body {
-    background-color: rgb(60, 69, 71)!important;
-    color: white!important;
-    margin-bottom: 100px!important;
+  background-color: rgb(60, 69, 71)!important;
+  color: white!important;
 }
 /* Navigation bar */
 .navbar {
@@ -32,7 +31,7 @@ body {
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
-    max-height: 1000px;
+  max-height: 1000px;
 }
 
 .overlay {
@@ -41,7 +40,7 @@ body {
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.329);
 }
 
 .description {
@@ -64,6 +63,10 @@ body {
 	color: #fff;
 	font-size: 1.3rem;
 	line-height: 1.5;
+}
+
+h3 {
+  font-family: cursive!important;
 }
 
 
@@ -172,16 +175,27 @@ a.prev, a.next {
 }
 
 #fam {
-    background-color: black!important;
-    border: 2px solid white!important;
-    height: fit-content!important;
-    width:100%!important;
-    padding-right:15px!important;
-    padding-left:15px!important;
-    padding-top: 10px!important;
-    padding-bottom: 10px!important;
-    margin-top:100px!important;
-    margin-left:auto!important;
-    max-width: 600px!important; 
-    text-align: center!important;
+  background-color: black!important;
+  border: 2px solid white!important;
+  height: fit-content!important;
+  width:100%!important;
+  padding-right:15px!important;
+  padding-left:15px!important;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  margin-top:100px!important;
+  margin-left:auto!important;
+  max-width: 600px!important; 
+  text-align: center!important;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color:black;
+  background-color: rgb(255, 255, 255);
+}
+
+footer img {
+  width:70px
 }

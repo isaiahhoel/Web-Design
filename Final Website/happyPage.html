@@ -3,51 +3,137 @@
 <html lang="en-US">
 
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Isaiah's Biography Site --- HappyPage</title>           <!--this is my title and the ones below are my meta tags for when it is cited -->
-	  <meta name="description" content="A website compiled of all the different things you can do in HTML, CSS, and Java.">
-      <meta http-equiv="author" content="Isaiah Hoelscher">
-      <link href="css/HappyCSS.css" type = "text/css" rel="stylesheet"/> 
-      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah's Biography Site --- HappyPage</title>           <!--this is my title and the ones below are my meta tags for when it is cited -->
+	  <meta name="description" content="Isaiah Hoelscher Biography Website">
+    <link rel="icon" type="image/x-icon" href="images/HappyLogo.png">
+    <link href="css/resetCSS.css" type = "text/css" rel="stylesheet"/>
+    <link href="css/HappyCSS.css" type = "text/css" rel="stylesheet"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="happyPage.html">Happy Page :)</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation"> <!--Navigation-->
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="main.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="family.html">Family</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Academics.html">Academics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Athletics.html">Athletics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faith.html">Faith</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="happyPage.html">Mrs.Todd Happy Page</a>
-                </li>
-            </ul>
-        </div>
+      <img class="navbar-brand" src="images/HappyLogo.png" alt="HappyLogo" width="50">
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation"> <!--Navigation-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="family.html">Family</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Academics.html">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Athletics.html">Athletics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faith.html">Faith</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="happyPage.html">Mrs.Todd Happy Page</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <header class="page-header header container-fluid">
-        <div class="overlay"></div>
-        <div class="description">
-          <h1>Welcome to the Academics Page</h1>
-          <h2>Find out what I have done and will do throughout my Academic career!</h2>    <!--header-->
-        </div>
+      <div class="overlay"></div>
+      <div class="description">
+        <h1>The Mrs. Todd Happy Page!!</h1>   <!--header-->
+      </div>
     </header>
+    <h3 class="h3matrix" style="text-align:center; margin-top:100px;">Matrix from the use of Canvas</h3>
+    <div class="matrix">
+
+      <canvas id="c"></canvas> <!-- http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript -->
+      <script src="js/matrix.js"></script>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".show").hide();
+        $(".hide").click(function(){
+          $(".matrix").hide();
+          $(".h3matrix").hide();
+          $(".hide").hide();
+          $(".show").show();
+        });                                   //Jquery Hide/Show with the canvas and buttons
+        $(".show").click(function(){
+          $(".matrix").show();
+          $(".h3matrix").show();
+          $(".hide").show();
+          $(".show").hide();
+        });
+      });
+    </script>
+    <div class="buttons">
+      <button class="hide">Click to Hide the Matrix</button>
+      <button class="show">Click here to bring it Back!</button>
+    </div>
+
+    <div class ="switch">
+        <p id="demo"></p>
+
+        <script>
+          let day;
+          switch (new Date().getDay()) {    //Gets the day of the week and outputs the message depending on the day using the switch statement
+            case 0:
+              day = "Sunday, The day of the Sabbath, rest and be renewed!";
+              break;
+            case 1:
+              day = "Monday, UGH!";
+              break;
+            case 2:
+              day = "Tuesday, TACO TUESDAYYYYYYYYY";
+              break;
+            case 3:
+              day = "Wednesday, Half way there!";
+              break;
+            case 4:
+              day = "Thursday, ONE more day til the weekend!";
+              break;
+            case 5:
+              day = "Friday, FINALLY!";
+              break;
+            case  6:
+              day = "Saturday, No work, no class, what can get better than this?";
+          }
+          document.getElementById("demo").innerHTML = "Today is " + day;
+        </script>
+    </div>
+
+    <div class = "input">
+        <form id="frm1" action="/action_page.php">
+          <button id="btn1" name="Da coolest Button" type="submit" value="HTML">HTML</button>     <!--JAVA INPUT-->
+        </form>
+        <br/>
+        <button onclick="myFunction()">Click to see the name of the "HTML" button</button>
+        <br/>
+
+        <p id="demo3" style="margin-top: 10px;"></p>                  <!--https://www.w3schools.com/js/tryit.asp?filename=tryjs_button_name-->
+
+        <script>
+          function myFunction() {
+            var x = document.getElementById("btn1").name;
+            document.getElementById("demo3").innerHTML = x;
+          }
+        </script>
+    </div>
+
+    <div class="while">
+
+    </div>
 
     <script src="js/ready.js"></script> <!--uses the ready function in js to wait for the whole page to load before showing it-->
+    <footer>
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Isaiah Hoelscher All Rights Reserved</p>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fihoelscher.cishlgu.com%2FFinal%2520Website%2FhappyPage.html"><img src="images/Validator.png" alt="validator"></a>
+    </footer>
   </body>
+</html>

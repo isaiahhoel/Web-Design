@@ -1,7 +1,6 @@
 body {
     background-color: rgb(60, 69, 71)!important;
     color: white!important;
-    margin-bottom: 100px!important;
 }
 /* Navigation bar */
 .navbar {
@@ -28,7 +27,7 @@ body {
 
 /* HEADER */
 .header {
-	background-image: url('../images/academicsHeader.jpg');
+	background-image: url('../images/HappyHeader.jpg');
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -41,7 +40,7 @@ body {
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.329);
 }
 
 .description {
@@ -64,4 +63,67 @@ body {
 	color: #fff;
 	font-size: 1.3rem;
 	line-height: 1.5;
+}
+/* Footer */
+footer {
+	text-align: center;
+	padding: 15px;
+	color:black;
+	background-color: rgb(255, 255, 255);
+}
+  
+footer img {	
+	width:70px
+}
+/*Matrix*/
+.matrix {
+	margin:0;
+	padding:0;
+}
+canvas {
+	display:block;
+	max-height: 500px;
+	width: 100%;
+	border: 10px solid white;
+}
+
+.hide, .show {
+	border-radius: 10px;
+}
+
+.hide:hover, .show:hover {
+	border-bottom: 3px solid rgb(179, 179, 179);
+	border-right: 3px solid rgb(179, 179, 179);
+	cursor: pointer;
+}
+
+.buttons {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.switch {
+	text-align: center;
+	border: 1px solid red;
+	padding: 15px 15px 0px 15px;
+	background-color: white;
+	color: black!important;
+	width:fit-content;
+	margin: 50px auto;
+}
+
+.input {
+	text-align: center;
+	border: 1px solid red;
+	padding: 15px 15px 0px 15px;
+	background-color: white;
+	color: black!important;
+	width:fit-content;
+	margin: 50px auto;
+}
+
+#demo3 {
+	color:blue;
+	font-family: monospace!important;
 }

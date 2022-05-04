@@ -6,15 +6,16 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Isaiah's Biography Site --- Home</title>           <!--this is my title and the ones below are my meta tags for when it is cited i -->
-	  <meta name="description" content="A website compiled of all the different things you can do in HTML, CSS, and Java.">
-      <meta http-equiv="author" content="Isaiah Hoelscher">
-      <link href="css/CSS.css" type = "text/css" rel="stylesheet"/> 
+	  <meta name="description" content="Isaiah Hoelscher Biography Website">
+      <link rel="icon" type="image/x-icon" href="images/HomeLogo.png">
+      <link href="css/resetCSS.css" type = "text/css" rel="stylesheet"/> 
+      <link href="css/mainCSS.css" type = "text/css" rel="stylesheet"/> 
       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">Logo</a>
+        <img class="navbar-brand" src="images/HomeLogo.png" alt="Home" width="50px">
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,4 +42,103 @@
             </ul>
         </div>
     </nav>
+    <header class="page-header header container-fluid">
+        <div class="overlay"></div>
+        <div class="description">
+          <h1>Isaiah's Biography Website</h1>
+        </div>
+    </header>
+
+    <div class="aboutMe">
+
+        <h1 class="projectHeader">About Me</h1>
+
+
+
+        <div class="acheive" style="display:table; margin-top: 100px;">
+            <div style="display: table-cell; float:right;">
+                <img class="welcome"src="images/Main2.JPG" alt="IsaiahMainPic">
+            </div>
+            <div style="display: table-cell; vertical-align: middle; width: 400px; padding-left: 10px;">
+                <p>
+                    Welcome to my Website! I have studied and worked hard to create this site so I hope you enjoy!
+                    <br/>
+                    <br/>
+                    My full name is Isaiah Patrick Hoelscher and have grown up my whole life in Union, MO with my
+                    Mom and Dad. I Graduated from Union HS in 2020 and have since been at Hannibal-LaGrange University 
+                    studying Computers and playing both track and baseball. I enjoy all sports and love to challenge myself 
+                    to perfect each one. I also enjoy exploring the outdoors, traveling, and playing video games.
+                </p>
+            </div>
+        </div>
+
+
+        <h1 class="projectHeader">About My Family!</h1>
+
+        <div class="acheive" style="display:table; margin-top: 100px;">
+            <p style="text-align:center;">Click the Image to go to the Family Page</p>
+            <div style="display: table-cell; float:right;">
+                <a href="family.html" target="_blank"><img src="images/headerFamily1.JPG" alt ="Family"></a>
+            </div>
+            <div style="display: table-cell; vertical-align: middle; width: 400px; padding-left: 10px;">
+                <p>
+                    Family has been one of the biggest influences in my life, whether it was bad influences 
+                    that would get me in trouble or good influences that would set me up for success later in life.
+                    I have 3 sibilings, two sisters and one brother, each of them have four kids and two of my older nieces have kids totaling 
+                    to two great nephews and one great niece. I have been very blessed that each one of my sibilings have lived 
+                    within twenty minutes of me so I could always see them and their kids. Without them I would be 
+                    a lost black and white soul without any personality and for that I will forever love and cherish them.
+                </p>
+            </div>
+        </div>
+
+        <h1 id="Faith" class="projectHeader">My Faith</h1>
+
+        <div class="acheive" style="display:table; margin-top: 100px;">
+            <p style="text-align:center;">Click the Image to go to the Faith Page</p>
+            <div style="display: table-cell; float:right;">
+                <a href="faith.html" target="_blank"><img src="images/crossing.jpg" alt ="Faith"></a>
+            </div>
+            <div style="display: table-cell; vertical-align: middle; width: 400px; padding-left: 10px;">
+                <p>
+                    I have always gone to church and have had an idea of who Jesus was but I never truly accepted all he 
+                    had done and continues to fulfill in peoples lives until June 2018 when I was baptized for the first 
+                    time. From that point on God has led me to live a progessively closer relationship with Him and He 
+                    greatly blessed me on my journey through young adulthood. One of my favorite verses is Ephesians 6:10 
+                    "<i>Be strong in the Lord and in His mighty power.</i>"
+                </p>
+            </div>
+        </div>
+
+        <h1 id="Athletics/Academics" class="projectHeader">Athletics/Academics</h1>
+
+        <div class="acheive" style="display:table; margin-top: 100px; margin-bottom:100px;">
+            <p style="text-align:center;">Click the Image to go to the Athletics Page</p>
+            <div style="display: table-cell; float:right;">
+                <a href="Athletics.html" target="_blank"><img src="images/Baseball2.JPG" alt ="Athletics"></a>
+            </div>
+            <div style="display: table-cell; vertical-align: middle; width: 400px; padding-left: 10px;">
+                <p>
+                    Growing up I have always been super competitive, whetherit was on the field 
+                    or in the classroom, I have always been one to try and be the best at everything. In the 
+                    classroom it was more about me being the first one done above being the most accurate on the 
+                    test so as I progressed through school I had to learn that in order to be the fastest and the 
+                    most acurate, I had to know as much as I could before taking the test or doing the homework.
+                    I have always loved baseball and soccer, other sports were fun and something extra to do but 
+                    they were nothing compared to baseball and soccer until I finally tried track my senior year. Although
+                    I was unable to do it my senior year due to covid, I was given the opportunity to try it in college 
+                    along with doing baseball and I have loved it, not becuase I was super good, but that it was 
+                    hard to be good and only certain people could be good so it became a new challenge and pushes me daily
+                    to train and get better and better while still enjoying my love for baseball and keeping up with all of 
+                    my studies.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/ready.js"></script> <!--uses the ready function in js to wait for the whole page to load before showing it-->
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Isaiah Hoelscher All Rights Reserved</p>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fihoelscher.cishlgu.com%2FFinal%2520Website%2Fmain.html"><img src="images/Validator.png" alt="validator"></a>
+      </footer>
   </body>
+</html>
